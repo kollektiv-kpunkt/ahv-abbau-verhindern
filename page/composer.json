@@ -1,0 +1,6 @@
+{
+    "require": {
+        "pecee/simple-router": "4.3.7.2",
+        "erusev/parsedown": "^1.7"
+    }
+}
