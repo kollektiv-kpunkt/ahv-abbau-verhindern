@@ -6,10 +6,14 @@ $parsedown = new Parsedown();
 
 $files = glob(__DIR__ . "/../public/pages/*.json");
 $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../templates');
-$twig = new \Twig\Environment($loader, [
-    'cache' => __DIR__ . '/../compilation_cache',
-    'debug' => true,
-]);
+$twigParams = [
+    'cache' => __DIR__ . '/../compilation_cache'
+];
+if (isset($_ENV['DEBUG']) && $_ENV['DEBUG'] == 1) {
+    $twigParams['debug'] = true;
+}
+$twig = new \Twig\Environment($loader, $twigParams);
+$twig->addExtension(new \Twig\Extension\DebugExtension());
 
 foreach ($files as $file) {
     $filename = basename($file);
@@ -22,7 +26,7 @@ foreach ($files as $file) {
 
     Router::get($path, function() use ($file, $filename, $parsedown, $twig) {
         $page = new Page($file, $filename, $parsedown);
-        echo $twig->render('index.html', ['the' => 'variables', 'go' => 'here']);
+        echo $twig->render("{$page->template}.html" , ["page" => $page]);
         exit;
     });
 }

@@ -1,0 +1,49 @@
+.ahv-button {
+    padding: 0.6em 2.5em;
+    border: 0.2em var(--bordercolor) solid;
+    border-radius: 0.1em;
+    display: block;
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+    box-sizing: border-box;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.8;
+    width: fit-content;
+
+    --bordercolor: var(--primary);
+    --backgroundcolor: var(--primary);
+    --textcolor: white;
+
+    transition: 0.125s ease filter, 0.125s ease opacity;
+
+    &.ahv-button-neg {
+        --bordercolor: white;
+        --backgroundcolor: white;
+        --textcolor: var(--primary);
+    }
+
+    &.ahv-button-line {
+        --backgroundcolor: transparent;
+        --textcolor: var(--bordercolor);
+    }
+}
+
+.ahv-button:hover {
+    -webkit-filter: brightness(1.15);
+    filter: brightness(1.15);
+}
+
+.ahv-button.ahv-button-next::after {
+    content: "\203a";
+    font-size: 1.5em;
+    line-height: 0;
+    margin-left: 0.2em;
+    display: inline-block;
+    transition: 0.125s ease transform;
+    transform: translateY(0.05em);
+}
+
+.ahv-button.ahv-button-next:hover::after {
+    transform: translateY(0.05em) translateX(0.15em);
+}

@@ -1,0 +1,68 @@
+{
+    "Mobile Styles large (1080px)": {
+        "prefix": [
+            "ms-large"
+        ],
+        "body": [
+            "@media (max-width: 1080px) {",
+            "    ${1:style}",
+            "}",
+        ],
+        "description": "Add mobile styles large."
+    },
+    "Mobile Styles medium (980px)": {
+        "prefix": [
+            "ms-medium"
+        ],
+        "body": [
+            "@media (max-width: 980px) {",
+            "    ${1:style}",
+            "}",
+        ],
+        "description": "Add mobile styles medium."
+    },
+    "Mobile Styles small (780px)": {
+        "prefix": [
+            "ms-small"
+        ],
+        "body": [
+            "@media (max-width: 780px) {",
+            "    ${1:style}",
+            "}",
+        ],
+        "description": "Add mobile styles small."
+    },
+    "Mobile Styles x-small (480px)": {
+        "prefix": [
+            "ms-x-small"
+        ],
+        "body": [
+            "@media (max-width: 480px) {",
+            "    ${1:style}",
+            "}",
+        ],
+        "description": "Add mobile styles x-small."
+    },
+    "Mobile Styles tiny (360px)": {
+        "prefix": [
+            "ms-tiny"
+        ],
+        "body": [
+            "@media (max-width: 360px) {",
+            "    ${1:style}",
+            "}",
+        ],
+        "description": "Add mobile styles tiny."
+    },
+    "Mobile Styles special": {
+        "prefix": [
+            "ms-special"
+        ],
+        "body": [
+            "@media (max-width: ${1:width}px) {",
+            "    ${1:style}",
+            "}",
+        ],
+        "description": "Add mobile styles special."
+    }
+}

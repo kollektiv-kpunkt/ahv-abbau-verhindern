@@ -1,0 +1,17 @@
+{{include ("elements/head.html")}}
+{{include ("elements/navbar.html")}}
+<div id="main-content" class="mt-5">
+    <div class="ahv-content-container md-container">
+        {% for block in page.content %}
+        <div class="ahv-default-template-block block-type-{{ block.type }}">
+            {% if block.type == "md" %}
+                {{ block.content | raw }}
+            {% else %}
+                {% include block.block ignore missing %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{{include ("elements/footer.html")}}
+{{include ("elements/foot.html")}}

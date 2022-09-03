@@ -1,0 +1,23 @@
+{%
+    set menuitems = [
+        {'title': "Darum geht's", 'url': '/#darum-gehts'},
+        {'title': "Unterstützer:innen", 'url': '/#unterstutzerinnen'},
+        {'title': "Brief ausdrucken", 'url': '/#brief-ausdrucken'},
+    ]
+%}
+<div class="md-container">
+    <div class="ahv-navbar-container flex justify-between my-6">
+        <a href="/" class="flex noeffect ahv-logo-container">
+            {{ include ("img/logo.svg") }}
+        </a>
+        <div class="ahv-navbar-menu">
+            <ul class="flex justify-end items-center h-full gap-x-8">
+                {% for item in menuitems %}
+                    <li class="ahv-navbar-menu-item text-2xl">
+                        <a href="{{ item.url }}" class="ahv-navbar-menu-item-link">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+{
+  "name": "ahv-abbau-verhindern",
+  "version": "1.0.0",
+  "description": "Webpage for small campaign regarding AHV-referendum in Switzerland.",
+  "private": true,
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "fast-glob": "^3.2.11",
+    "laravel-mix": "^6.0.43",
+    "postcss-nested": "^5.0.6",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "tailwindcss": "^3.0.23",
+    "webpack-cli": "^4.9.2",
+    "webpack-livereload-plugin": "^3.0.2",
+    "when-in-viewport": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kollektiv-kpunkt/ahv-abbau-verhindern.git"
+  },
+  "author": "timothyoesch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kollektiv-kpunkt/ahv-abbau-verhindern/issues"
+  },
+  "homepage": "https://github.com/kollektiv-kpunkt/ahv-abbau-verhindern#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

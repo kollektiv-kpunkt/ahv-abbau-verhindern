@@ -1,0 +1,41 @@
+.ahv-supporters-container {
+    box-shadow: 0 0 0 100vmax var(--primary-10);
+    clip-path: inset(0 -100vmax);
+}
+
+.ahv-supporters-grid {
+    --gutter: 3rem;
+    --cols: 4;
+
+    gap: var(--gutter);
+
+    @media (max-width: 1380px) {
+        --cols: 3;
+        --gutter: 2rem;
+    }
+
+    @media (max-width: 980px) {
+        --cols: 2;
+    }
+
+    .ahv-supporter-card {
+        width: calc(100% / var(--cols) - ((var(--cols) - 1) * var(--gutter) / var(--cols)));
+        height: fit-content;
+        overflow: hidden;
+    }
+}
+
+.ahv-supporter-image-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

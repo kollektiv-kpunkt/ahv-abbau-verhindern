@@ -1,0 +1,80 @@
+@import "fonts/fonts.scss";
+
+html {
+    font-size: clamp(15px, 1vw, 18px);
+
+    @media (max-width: 780px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: "Din", sans-serif;
+    font-size: 1.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.75rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5,
+h6 {
+    font-size: 1.5rem;
+}
+
+p + p {
+    margin-top: 1.15em;
+}
+
+a:not(.noeffect):not(.ahv-button) {
+    color: var(--linkcolor);
+    line-height: 1;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background-image: linear-gradient(to right, var(--linkcolor) 0, var(--linkcolor) 100%);
+    background-size: 100% 0.15em;
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+    --linkcolor: var(--primary);
+    --linkhover: white;
+
+    transition: 0.125s ease-in-out background-size, 0.125s ease-in-out color;
+}
+
+a:not(.noeffect):not(.ahv-button):hover {
+    background-size: 100% 100%;
+    color: var(--linkhover);
+}
+
+.text-white a {
+    --linkcolor: white;
+    --linkhover: var(--primary);
+}
+
+b,strong {
+    color: var(--primary);
+}

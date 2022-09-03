@@ -8,7 +8,7 @@
     "content" : [
         {
             "type" : "md",
-            "content" : "index.md"
+            "content" : "datenschutz.md"
         },
         {
             "type" : "element",

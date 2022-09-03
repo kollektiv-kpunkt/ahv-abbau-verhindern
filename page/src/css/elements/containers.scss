@@ -1,0 +1,9 @@
+.md-container {
+    max-width: 1380px;
+    width: 80vw;
+    margin: 0 auto;
+
+    @media (max-width: 980px) {
+        width: 95vw;
+    }
+}
