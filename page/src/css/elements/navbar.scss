@@ -1,4 +1,85 @@
 a.ahv-logo-container {
     max-width: 20%;
     height: auto;
+
+    @media (max-width: 980px) {
+        max-width: 50%;
+    }
+}
+
+.ahv-navbar-mobilemenu {
+    display: none;
+
+    .ahv-navbar-mobilemenu-content {
+        top: calc(100% + 1rem);
+        right: 0;
+        max-height: 0;
+        width: 95vw;
+        max-width: 500px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    @media (max-width: 980px) {
+        display: block;
+    }
+}
+
+@media (max-width: 980px) {
+    .ahv-navbar-menu {
+        display: none;
+    }
+}
+
+.ahv-navbar-mobilemenu-tofuburger {
+
+    &,&::before,&::after {
+        background-color: var(--primary);
+        width: 2.5rem;
+        height: 0.3rem;
+        display: inline-block;
+        content: '';
+        cursor: pointer;
+        transition: 0.125s ease-in-out all;
+    }
+
+    &::before {
+        transform: translateY(-0.5rem);
+    }
+
+    &::after {
+        transform: translateY(0.2rem);
+    }
+}
+
+.ahv-navbar-mobilemenu-item {
+    a.ahv-navbar-mobilemenu-item-link {
+        --linkcolor: white;
+        font-weight: 700;
+        font-size: 2rem;
+
+        &:active, &:hover {
+            --linkhover: var(--primary);
+        }
+    }
+
+    & + & {
+        margin-top: 0.75rem;
+    }
+}
+
+.ahv-navbar-mobilemenu.ahv-mobilemenu-open {
+    .ahv-navbar-mobilemenu-tofuburger {
+        & {
+            background-color: transparent;
+        }
+
+        &::before {
+            transform: translateY(0) rotate(45deg);
+        }
+
+        &::after {
+            transform: translateY(-0.3rem) rotate(-45deg);
+        }
+    }
 }

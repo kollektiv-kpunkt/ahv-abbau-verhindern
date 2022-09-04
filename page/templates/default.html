@@ -2,6 +2,18 @@
 {{include ("elements/navbar.html")}}
 <div id="main-content" class="mt-5">
     <div class="ahv-content-container md-container">
+        {% if page.isFrontpage == false %}
+            <div class="ahv-pageheader mt-24 mb-12">
+                <h1 class="ahv-pageheader-title text-primary">{{page.title}}</h1>
+            </div>
+        {% else %}
+            <div id="darum-gehts">
+                <div class="ahv-pageheader mt-24 mb-12">
+                    <h2 class="ahv-pageheader-subtitle font-normal">Jede Stimme zählt</h2>
+                    <h1 class="ahv-pageheader-title text-primary">2x Nein zum AHV-Abbau</h1>
+                </div>
+            </div>
+        {% endif %}
         {% for block in page.content %}
         <div class="ahv-default-template-block block-type-{{ block.type }}">
             {% if block.type == "md" %}

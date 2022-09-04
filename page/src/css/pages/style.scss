@@ -1,1 +1,7 @@
 @import "frontpage.scss";
+
+@media (max-width: 980px) {
+    .ahv-pageheader.mt-24 {
+        margin-top: 3rem;
+    }
+}

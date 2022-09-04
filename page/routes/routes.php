@@ -26,6 +26,7 @@ foreach ($files as $file) {
 
     Router::get($path, function() use ($file, $filename, $parsedown, $twig) {
         $page = new Page($file, $filename, $parsedown);
+        echo("<script>var page = " . json_encode($page) . "; console.log(page);</script>");
         echo $twig->render("{$page->template}.html" , ["page" => $page]);
         exit;
     });

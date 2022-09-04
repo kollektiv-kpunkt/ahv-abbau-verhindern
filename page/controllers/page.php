@@ -11,6 +11,7 @@ class Page {
     public $title;
     public $description;
     public $OG;
+    public $isFrontpage;
     public $content;
 
     function __construct($file, $filename, $parsedown) {
@@ -36,6 +37,7 @@ class Page {
                 $this->OG = $this->pageURL . $fileContents['details']['og'];
             }
         }
+        $this->isFrontpage = (isset($fileContents['details']['frontpage'])) ? true : false; ;
 
 
         foreach ($fileContents['content'] as $content) {

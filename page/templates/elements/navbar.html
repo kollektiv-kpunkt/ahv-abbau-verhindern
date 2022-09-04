@@ -1,8 +1,8 @@
 {%
     set menuitems = [
         {'title': "Darum geht's", 'url': '/#darum-gehts'},
-        {'title': "Unterstützer:innen", 'url': '/#unterstutzerinnen'},
-        {'title': "Brief ausdrucken", 'url': '/#brief-ausdrucken'},
+        {'title': "Unterstützerinnen", 'url': '/#unterstutzerinnen'},
+        {'title': "Brief herunterladen", 'url': '/#brief-herunterladen'},
     ]
 %}
 <div class="md-container">
@@ -11,13 +11,29 @@
             {{ include ("img/logo.svg") }}
         </a>
         <div class="ahv-navbar-menu">
-            <ul class="flex justify-end items-center h-full gap-x-8">
+            <ul class="flex justify-end items-center h-full gap-x-8 nolist">
                 {% for item in menuitems %}
                     <li class="ahv-navbar-menu-item text-2xl">
                         <a href="{{ item.url }}" class="ahv-navbar-menu-item-link">{{ item.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
+        </div>
+        <div class="ahv-navbar-mobilemenu relative">
+            <div class="ahv-navbar-mobilemenu-button flex items-center h-full">
+                <div class="ahv-navbar-mobilemenu-tofuburger"></div>
+            </div>
+            <div class="ahv-navbar-mobilemenu-content absolute bg-primary">
+                <div class="ahv-navbar-mobilemenu-inner p-8">
+                    <ul class="flex flex-col gap-y-4 nolist">
+                        {% for item in menuitems %}
+                            <li class="ahv-navbar-mobilemenu-item">
+                                <a href="{{ item.url }}" class="ahv-navbar-mobilemenu-item-link">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

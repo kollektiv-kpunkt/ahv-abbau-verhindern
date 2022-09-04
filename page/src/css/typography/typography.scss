@@ -75,6 +75,17 @@ a:not(.noeffect):not(.ahv-button):hover {
     --linkhover: var(--primary);
 }
 
-b,strong {
+b:not(.default),strong:not(.default) {
     color: var(--primary);
+}
+
+ul:not(.nolist) {
+    list-style: disc;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    li + li {
+        margin-top: 0.75em;
+    }
 }

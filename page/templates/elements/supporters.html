@@ -12,12 +12,12 @@
     ]
 %}
 
-<div class="ahv-supporters-section mt-24">
+<div class="ahv-supporters-section mt-24" id="unterstutzerinnen">
     <div class="ahv-supporters-container py-12 bg-primary-10">
         <h2 class="text-primary-120 text-5xl">Wir stehen dahinter</h2>
         <div class="ahv-supporters-grid mt-8 flex flex-wrap">
             {% for supporter in supporters %}
-                <div class="ahv-supporter-card bg-primary-120 rounded">
+                <div class="ahv-supporter-card rounded">
                     <div class="ahv-supporter-image relative">
                         {% if supporter.image starts with "http" %}
                             {% set url = supporter.image %}
@@ -28,10 +28,10 @@
                             <img src="{{ url }}" alt="{{ supporter.name }}">
                         </div>
                         <div class="ahv-supporter-image-blind absolute top-0 left-0 w-full h-full bg-primary-40 mix-blend-color"></div>
-                    </div>
-                    <div class="ahv-supporter-details p-4 leading-tight">
-                        <div class="ahv-supporter-name text-white font-bold text-2xl">{{ supporter.name }}</div>
-                        <div class="ahv-supporter-job text-white">{{ supporter.job }}</div>
+                        <div class="ahv-supporter-details p-4 leading-tight absolute bottom-0 bg-primary-120 bg-opacity-90 w-full">
+                            <div class="ahv-supporter-name text-white font-bold text-2xl">{{ supporter.name }}</div>
+                            <div class="ahv-supporter-job text-white text-base leading-tight">{{ supporter.job }}</div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}

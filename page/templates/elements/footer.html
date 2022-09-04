@@ -1,1 +1,26 @@
-<div class="h-44"></div>
+{%
+    set footeritems = [
+        {'title': "Impressum", 'url': '/impressum'},
+        {'title': "Datenschutz", 'url': '/datenschutz'},
+        {'title': "Built by <b class='default'>K.</b>", 'url': 'https://kpunkt.ch', "target": '_blank'},
+    ]
+%}
+
+<div class="mt-24 mb-8">
+    <div class="md-container ahv-footer-container">
+        <div class="ahv-footer-inner flex justify-between">
+            <a href="/" class="flex noeffect ahv-logo-container">
+                {{ include ("img/logo.svg") }}
+            </a>
+            <div class="ahv-footer-menu">
+                <ul class="flex justify-end items-center h-full gap-x-8 nolist">
+                    {% for item in footeritems %}
+                        <li class="ahv-footer-menu-item text-2xl">
+                            <a href="{{ item.url }}" class="ahv-footer-menu-item-link" target="{{ item.target }}">{{ item.title | raw }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

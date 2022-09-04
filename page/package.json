@@ -36,6 +36,8 @@
   },
   "homepage": "https://github.com/kollektiv-kpunkt/ahv-abbau-verhindern#readme",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "print-js": "^1.6.0",
+    "vanilla-cookieconsent": "^2.8.6"
   }
 }
