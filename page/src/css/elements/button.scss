@@ -47,3 +47,15 @@
 .ahv-button.ahv-button-next:hover::after {
     transform: translateY(0.05em) translateX(0.15em);
 }
+
+@media (max-width: 480px) {
+    #ahv-letter-download {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 360px) {
+        #ahv-letter-download {
+            font-size: 1.25rem;
+        }
+    }
+}

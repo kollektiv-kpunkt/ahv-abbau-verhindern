@@ -3,7 +3,7 @@
     --cc-text: #000;
     --cc-btn-primary-bg: var(--primary);
     --cc-btn-primary-text: var(--cc-bg);
-    --cc-btn-primary-hover-bg: var(--primary-120);
+    --cc-btn-primary-hover-bg: var(--primary-80);
     --cc-btn-secondary-bg: var(--secondary);
     --cc-btn-secondary-text: white;
     --cc-btn-secondary-hover-bg: var(--secondary-80);

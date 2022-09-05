@@ -11,34 +11,28 @@ cookieconsent.run({
 
   mode: "opt-in",
   delay: 0,
-  // auto_language: null                     // default: null; could also be 'browser' or 'document'
-  // autorun: true,                          // default: true
-  // force_consent: false,                   // default: false
-  // hide_from_bots: false,                  // default: false
-  // remove_cookie_tables: false             // default: false
-  // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
-  // cookie_expiration: 182,                 // default: 182 (days)
-  // cookie_necessary_only_expiration: 182   // default: disabled
-  // cookie_domain: location.hostname,       // default: current domain
-  // cookie_path: '/',                       // default: root
-  // cookie_same_site: 'Lax',                // default: 'Lax'
-  // use_rfc_cookie: false,                  // default: false
   revision: 1, // default: 0
 
-  onFirstAction: function (user_preferences, cookie) {
-    // callback triggered only once
-  },
-
-  onAccept: function (cookie) {
-    // ...
+  onFirstAction: function (cookie, user_preferences) {
+    if (cookie.accepted_categories.includes("analytics")) {
+      console.log("Analytics enabled");
+      _paq.push(["rememberConsentGiven"]);
+    }
   },
 
   onChange: function (cookie, changed_preferences) {
-    // ...
+    if (cookie.categories.includes("analytics")) {
+      console.log("Analytics enabled");
+      _paq.push(["rememberConsentGiven"]);
+    } else {
+      console.log("Analytics disabled");
+      _paq.push(["forgetConsentGiven"]);
+    }
   },
+
   gui_options: {
     consent_modal: {
-      layout: "cloud", // box/cloud/bar
+      layout: "box", // box/cloud/bar
       position: "bottom right", // bottom/middle/top + left/right/center
       transition: "slide", // zoom/slide
       swap_buttons: true, // enable to invert buttons
@@ -46,7 +40,7 @@ cookieconsent.run({
     settings_modal: {
       layout: "bar", // box/bar
       // position: 'left',           // left/right
-      transition: "zoom", // zoom/slide
+      transition: "slide", // zoom/slide
     },
   },
 

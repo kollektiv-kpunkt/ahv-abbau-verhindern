@@ -1,6 +1,7 @@
 {{include ("elements/head.html")}}
 {{include ("elements/navbar.html")}}
-<div id="main-content" class="mt-5">
+{# {{ dump() }} #}
+<div id="main-content" class="mt-5{% if page.isFrontpage == true %} front-page-template{% endif %}">
     <div class="ahv-content-container md-container">
         {% if page.isFrontpage == false %}
             <div class="ahv-pageheader mt-24 mb-12">
@@ -26,4 +27,5 @@
     </div>
 </div>
 {{include ("elements/footer.html")}}
+{{include ("elements/analytics.html")}}
 {{include ("elements/foot.html")}}

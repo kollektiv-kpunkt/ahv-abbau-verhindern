@@ -3,5 +3,13 @@
 @media (max-width: 980px) {
     .ahv-pageheader.mt-24 {
         margin-top: 3rem;
+
+        .ahv-pageheader-subtitle {
+            font-size: 2.5rem;
+        }
+
+        .ahv-pageheader-title {
+            font-size: 3rem;
+        }
     }
 }
