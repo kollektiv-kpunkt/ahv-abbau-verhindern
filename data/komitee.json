@@ -1,0 +1,187 @@
+[
+  {
+    "fname": "Lara",
+    "lname": "Stoll",
+    "part": 1,
+    "job": "Künstlerin",
+    "img": "Lara Stoll.jpg"
+  },
+  {
+    "fname": "Morena",
+    "lname": "Diaz",
+    "part": 1,
+    "job": "Mutter, Influencerin & Aktivistin",
+    "img": "Morena Diaz.jpg"
+  },
+  {
+    "fname": "Agota",
+    "lname": "Lavoyer",
+    "part": 1,
+    "job": "Expertin Geschlechterspezifische Gewalt",
+    "img": "AgotaLavoyer_100__17A1899_GiaHanLe.jpg"
+  },
+  {
+    "fname": "Anna",
+    "lname": "Rosenwasser",
+    "part": 1,
+    "job": "LGBTQ-Aktivistin",
+    "img": "Anna Rosenwasser.jpg"
+  },
+  {
+    "fname": "Jane",
+    "lname": "Mumford",
+    "part": 1,
+    "job": "Komikerin"
+  },
+  {
+    "fname": "Fatima",
+    "lname": "Moumouni",
+    "part": 1,
+    "job": "Spoken Word Poetin",
+    "img": "Fatima 1.jpg"
+  },
+  {
+    "fname": "Lea",
+    "lname": "Whitcher / 9voltNelly",
+    "part": 1,
+    "job": "Komikerin",
+    "img": "LeaWhitcher.jpg"
+  },
+  {
+    "fname": "Lisa",
+    "lname": "Christ",
+    "part": 1,
+    "job": "Satirikerin und Autorin",
+    "img": "LISA CHRIST by Frederike Asael-2.jpg"
+  },
+  {
+    "fname": "Franziska",
+    "lname": "Schutzbach",
+    "part": 1,
+    "job": "Soziologin und Geschlechterforscherin",
+    "img": "SChutzbach.jpg"
+  },
+  {
+    "fname": "Sara",
+    "lname": "Satir",
+    "part": 1,
+    "job": "Coach und Kolumnistin",
+    "img": "Sara Satir.jpeg"
+  },
+  {
+    "fname": "Merita",
+    "lname": "Shabani",
+    "part": 1,
+    "job": "Stv. Chefredaktorin baba news",
+    "img": "Merita Shabani.JPG"
+  },
+  {
+    "fname": "Leandra",
+    "lname": "Bias",
+    "part": 1,
+    "job": "Politologin",
+    "img": "Leandra Bias.jpeg"
+  },
+  {
+    "fname": "Natascha",
+    "lname": "Beller",
+    "part": 1,
+    "job": "Autorin und Regisseurin",
+    "img": "Natascha Portrait Hochformat 4.png"
+  },
+  {
+    "fname": "Mia",
+    "lname": "Lüscher",
+    "part": 1,
+    "job": "Schauspielerin",
+    "img": "Mia Lüscher.jpeg"
+  },
+  {
+    "fname": "Regula",
+    "lname": "Mühlemann",
+    "part": 1,
+    "job": "Opernsängerin"
+  },
+  {
+    "fname": "Vera",
+    "lname": "Kaa",
+    "part": 1,
+    "job": "Sängerin",
+    "img": "Vera Kaa.jpg"
+  },
+  {
+    "fname": "Sibylle",
+    "lname": "Berg",
+    "part": 1,
+    "job": "Autorin"
+  },
+  {
+    "fname": "Sarah",
+    "lname": "Akanji",
+    "part": 1,
+    "job": "Fussballerin",
+    "img": "Sarah Akanji.jpg"
+  },
+  {
+    "fname": "Ira",
+    "lname": "May",
+    "part": 0
+  },
+  {
+    "fname": "Melinda",
+    "lname": "Nadji Abondji",
+    "part": 0
+  },
+  {
+    "fname": "Sibylle",
+    "lname": "Forrer",
+    "part": 0,
+    "job": "Pfarrerin"
+  },
+  {
+    "fname": "Anna",
+    "lname": "Rossinelli",
+    "part": 0,
+    "job": "Sängerin"
+  },
+  {
+    "fname": "Verena",
+    "lname": "Mühlethaler",
+    "part": 0,
+    "job": "Pfarrerin"
+  },
+  {
+    "fname": "Priscilla",
+    "lname": "Schwendimann",
+    "part": 0,
+    "job": "Lesbische Pfarrerin"
+  },
+  {
+    "fname": "Maja",
+    "lname": "Neuenschander",
+    "part": 0,
+    "job": "Marathonläuferin und BDP Politikerin"
+  },
+  {
+    "fname": "Melanie",
+    "lname": "Winiger",
+    "part": 0,
+    "job": "Regisseurin, Miss Schweiz"
+  },
+  {
+    "fname": "Naomie",
+    "lname": "Lareine",
+    "part": 0
+  },
+  {
+    "fname": "Sina",
+    "part": 0,
+    "job": "Sängerin"
+  },
+  {
+    "fname": "Tamy",
+    "lname": "Glauser",
+    "part": 0,
+    "job": "berühmt"
+  }
+]

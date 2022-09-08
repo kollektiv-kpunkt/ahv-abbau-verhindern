@@ -1,0 +1,122 @@
+{
+  "0": {
+    "fname": "Sarah",
+    "lname": "Akanji",
+    "part": 1,
+    "job": "Fussballerin",
+    "img": "Sarah Akanji.jpg"
+  },
+  "1": {
+    "fname": "Natascha",
+    "lname": "Beller",
+    "part": 1,
+    "job": "Autorin und Regisseurin",
+    "img": "Natascha Portrait Hochformat 4.png",
+    "uuid": "9818a9db-3532-40a9-81dc-a9b1ccbbd9bb"
+  },
+  "2": {
+    "fname": "Leandra",
+    "lname": "Bias",
+    "part": 1,
+    "job": "Politologin",
+    "img": "Leandra Bias.jpeg",
+    "uuid": "a23c0e79-1bb1-4adc-bb16-ad6a2add8c13"
+  },
+  "3": {
+    "fname": "Lisa",
+    "lname": "Christ",
+    "part": 1,
+    "job": "Satirikerin und Autorin",
+    "img": "LISA CHRIST by Frederike Asael-2.jpg",
+    "uuid": "361c0ddc-23e2-40b6-a346-0edae639c27d"
+  },
+  "4": {
+    "fname": "Morena",
+    "lname": "Diaz",
+    "part": 1,
+    "job": "Mutter, Influencerin & Aktivistin",
+    "img": "Morena Diaz.jpg",
+    "uuid": "b12268b7-0fc7-4a1b-90d8-44e2ac4ede09"
+  },
+  "5": {
+    "fname": "Vera",
+    "lname": "Kaa",
+    "part": 1,
+    "job": "S\u00e4ngerin",
+    "img": "Vera Kaa.jpg",
+    "uuid": "437617ba-3718-41d3-9236-eb80a1e42fab"
+  },
+  "6": {
+    "fname": "Agota",
+    "lname": "Lavoyer",
+    "part": 1,
+    "job": "Expertin Geschlechterspezifische Gewalt",
+    "img": "AgotaLavoyer_100__17A1899_GiaHanLe.jpg",
+    "uuid": "9d0f5b11-c556-4168-b9bd-a3b5d7897d85"
+  },
+  "7": {
+    "fname": "Mia",
+    "lname": "L\u00fcscher",
+    "part": 1,
+    "job": "Schauspielerin",
+    "img": "Mia Lu\u0308scher.jpeg",
+    "uuid": "0ea92cae-8d9d-44d1-a864-1dbce3a785cc"
+  },
+  "8": {
+    "fname": "Fatima",
+    "lname": "Moumouni",
+    "part": 1,
+    "job": "Spoken Word Poetin",
+    "img": "Fatima 1.jpg",
+    "uuid": "7b4e90cd-73be-461f-885d-92e23e8fc7a5"
+  },
+  "9": {
+    "fname": "Anna",
+    "lname": "Rosenwasser",
+    "part": 1,
+    "job": "LGBTQ-Aktivistin",
+    "img": "Anna Rosenwasser.jpg",
+    "uuid": "7173a0e2-cbcd-4172-aee2-7207c2b0cb43"
+  },
+  "10": {
+    "fname": "Sara",
+    "lname": "Satir",
+    "part": 1,
+    "job": "Coach und Kolumnistin",
+    "img": "Sara Satir.jpeg",
+    "uuid": "48f8ea96-f54b-4313-a958-3b1ac435363e"
+  },
+  "11": {
+    "fname": "Franziska",
+    "lname": "Schutzbach",
+    "part": 1,
+    "job": "Soziologin und Geschlechterforscherin",
+    "img": "SChutzbach.jpg",
+    "uuid": "756dac6c-d904-4700-970e-caf3b4487f6f"
+  },
+  "12": {
+    "fname": "Merita",
+    "lname": "Shabani",
+    "part": 1,
+    "job": "Stv. Chefredaktorin baba news",
+    "img": "Merita Shabani.JPG",
+    "uuid": "091a42c8-a7a6-4f6e-8db2-7b5735d19de9"
+  },
+  "13": {
+    "fname": "Lara",
+    "lname": "Stoll",
+    "part": 1,
+    "job": "K\u00fcnstlerin",
+    "img": "Lara Stoll.jpg",
+    "uuid": "5ab01551-feb3-45e2-a59b-1b46656817fc"
+  },
+  "14": {
+    "fname": "Lea",
+    "lname": "Whitcher / 9voltNelly",
+    "part": 1,
+    "job": "Komikerin",
+    "img": "LeaWhitcher.jpg",
+    "uuid": "0759ff93-18c5-4ebe-85f0-c26771b87d85"
+  },
+  "": { "uuid": "4cf5cefe-0335-4027-87b2-982d33036e17" }
+}

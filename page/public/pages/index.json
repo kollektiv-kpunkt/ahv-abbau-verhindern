@@ -1,23 +1,22 @@
 {
-    "details" : {
-        "template" : "default",
-        "title" : "NEIN zum AHV Abbau!",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "og" : "assets/images/og/index.jpg",
-        "frontpage" : true
+  "details": {
+    "template": "default",
+    "title": "NEIN zum AHV Abbau!",
+    "description": "Die AHV-Vorlagen bedeuten für jede Frau rund 26'000 Franken Rentenverlust, obwohl die Frauenrenten bereits heute ein Drittel tiefer sind als jene der Männer. Uns ist ein Nein zu diesem AHV-Abbau sehr wichtig. Darum haben wir einen Brief lanciert, mit dem wir unser Umfeld ans Abstimmen erinnern möchten.",
+    "frontpage": true
+  },
+  "content": [
+    {
+      "type": "md",
+      "content": "index.md"
     },
-    "content" : [
-        {
-            "type" : "md",
-            "content" : "index.md"
-        },
-        {
-            "type" : "block",
-            "content" : "downloadbutton"
-        },
-        {
-            "type" : "block",
-            "content" : "supporters"
-        }
-    ]
+    {
+      "type": "block",
+      "content": "downloadbutton"
+    },
+    {
+      "type": "block",
+      "content": "supporters"
+    }
+  ]
 }

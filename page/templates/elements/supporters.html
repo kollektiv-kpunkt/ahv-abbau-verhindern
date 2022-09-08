@@ -1,23 +1,29 @@
 {%
     set supporters = [
-        {"name" : "Franziska Schutzbach", "job": "Soziologin und Geschlechterforscherin", "image": "https://avenue.jetzt/wp-content/uploads/2021/06/Franziska_Schutzbach-1.jpg"},
-        {"name" : "Anna Rosenwasser", "job": "Aktivistin", "image": "https://images.squarespace-cdn.com/content/55b5f666e4b07baccbce3017/1575449653768-TV58CHKTX8HHD7ICM6V3/Wahrheit%2C+Wein+und+Eisenring+-+Anna+Rosenwasser?format=1500w&content-type=image%2Fjpeg"},
-        {"name" : "Sarah Akanji", "job": "Fussballerin", "image": "https://www.sportshistory.ch/site/assets/files/1058/2019-08-06_fcw_sarah_akanji-4_kopie-1.600x600.jpg"},
-        {"name" : "Natascha Beller", "job": "Autorin und Regisseurin", "image": "https://www.swissfilms.ch/upload/media/people/9964/thumb_people_content/Beller_Natascha_A257F063E83A4B9C9850D8C0BE5166AD.jpg"},
-        {"name" : "Anna Rosenwasser", "job": "Aktivistin", "image": "https://images.squarespace-cdn.com/content/55b5f666e4b07baccbce3017/1575449653768-TV58CHKTX8HHD7ICM6V3/Wahrheit%2C+Wein+und+Eisenring+-+Anna+Rosenwasser?format=1500w&content-type=image%2Fjpeg"},
-        {"name" : "Sarah Akanji", "job": "Fussballerin", "image": "https://www.sportshistory.ch/site/assets/files/1058/2019-08-06_fcw_sarah_akanji-4_kopie-1.600x600.jpg"},
-        {"name" : "Natascha Beller", "job": "Autorin und Regisseurin", "image": "https://www.swissfilms.ch/upload/media/people/9964/thumb_people_content/Beller_Natascha_A257F063E83A4B9C9850D8C0BE5166AD.jpg"},
-        {"name" : "Franziska Schutzbach", "job": "Soziologin und Geschlechterforscherin", "image": "https://avenue.jetzt/wp-content/uploads/2021/06/Franziska_Schutzbach-1.jpg"},
-
+        {"_id" : "be5b22c2-49c2-4cc0-8643-9e7edba701b9", "name" : "Sarah Akanji", "job": "Fussballerin", "image": "Sarah Akanji.jpg"},
+        {"_id" : "264e6b8d-7f48-494e-bfc6-52cef81225a1", "name" : "Natascha Beller", "job": "Autorin und Regisseurin", "image": "Natascha Portrait Hochformat 4.png"},
+        {"_id" : "01979d83-6c9c-46be-82a8-82a598000909", "name" : "Leandra Bias", "job": "Politologin", "image": "Leandra Bias.jpeg"},
+        {"_id" : "dc80f3a8-5a2d-4ddd-8e9e-5c49005bf503", "name" : "Lisa Christ", "job": "Satirikerin und Autorin", "image": "LISA CHRIST by Frederike Asael-2.jpg"},
+        {"_id" : "a932a746-ffa3-41da-bdf9-5d83c584ba6b", "name" : "Morena Diaz", "job": "Mutter, Influencerin & Aktivistin", "image": "Morena Diaz.jpg"},
+        {"_id" : "81aa333d-6492-452c-8831-a38363de1279", "name" : "Vera Kaa", "job": "Sängerin", "image": "Vera Kaa.jpg"},
+        {"_id" : "666308c4-739b-4ff9-8308-a843a4057615", "name" : "Agota Lavoyer", "job": "Expertin Geschlechterspezifische Gewalt", "image": "AgotaLavoyer_100__17A1899_GiaHanLe.jpg"},
+        {"_id" : "7d5ed532-6210-4eb6-ab7f-4b203707186a", "name" : "Mia Lüscher", "job": "Schauspielerin", "image": "Mia Lüscher.jpeg"},
+        {"_id" : "6d4a05ee-a2d7-44e4-94c2-e736b600c58f", "name" : "Fatima Moumouni", "job": "Spoken Word Poetin", "image": "Fatima 1.jpg"},
+        {"_id" : "c3bd7490-1b9c-499e-8218-10ee6cdf3a3b", "name" : "Anna Rosenwasser", "job": "LGBTQ-Aktivistin", "image": "Anna Rosenwasser.jpg"},
+        {"_id" : "6a15d49f-207c-4e1b-b109-eabb62a8e719", "name" : "Sara Satir", "job": "Coach und Kolumnistin", "image": "Sara Satir.jpeg"},
+        {"_id" : "578ebbad-f5c3-4920-a53c-a8051e0a37f2", "name" : "Franziska Schutzbach", "job": "Soziologin und Geschlechterforscherin", "image": "SChutzbach.jpg"},
+        {"_id" : "bef5fa9c-81c2-4bd5-8b2a-cd21af682f27", "name" : "Merita Shabani", "job": "Stv. Chefredaktorin baba news", "image": "Merita Shabani.JPG"},
+        {"_id" : "94d0f699-b343-42e5-bdf2-d622a38141d7", "name" : "Lara Stoll", "job": "Künstlerin", "image": "Lara Stoll.jpg"},
+        {"_id" : "70881472-4190-43ba-b286-1aa0bc49820e", "name" : "Lea Whitcher / 9voltNelly", "job": "Komikerin", "image": "LeaWhitcher.jpg"}
     ]
 %}
 
 <div class="ahv-supporters-section mt-24" id="unterstutzerinnen">
     <div class="ahv-supporters-container py-12 bg-primary-10">
         <h2 class="text-primary-120 text-5xl">Wir stehen dahinter</h2>
-        <div class="ahv-supporters-grid mt-8 flex flex-wrap">
+        <div class="ahv-supporters-grid mt-8 flex flex-wrap justify-center">
             {% for supporter in supporters %}
-                <div class="ahv-supporter-card rounded">
+                <div class="ahv-supporter-card rounded" id="{{ supporter._id }}">
                     <div class="ahv-supporter-image relative">
                         {% if supporter.image starts with "http" %}
                             {% set url = supporter.image %}
@@ -35,6 +41,9 @@
                     </div>
                 </div>
             {% endfor %}
+        </div>
+        <div class="mt-8 text-base">
+            <p><b>Weitere Unterstützerinnen:</b> Sibylle Berg, Autorin, Regula Mühlemann, Opernsängerin</p>
         </div>
     </div>
 </div>

@@ -26,13 +26,12 @@ foreach ($files as $file) {
 
     Router::get($path, function() use ($file, $filename, $parsedown, $twig) {
         $page = new Page($file, $filename, $parsedown);
-        echo("<script>var page = " . json_encode($page) . "; console.log(page);</script>");
+        // echo("<script>var page = " . json_encode($page) . "; console.log(page);</script>");
         echo $twig->render("{$page->template}.html" , ["page" => $page, "environment" => $_ENV]);
         exit;
     });
 }
 
 Router::get("/{exception}", function($exception) {
-    header("HTTP/1.0 404 Not Found");
-    echo "Exception: {$exception}";
+    header("Location: /");
 });
