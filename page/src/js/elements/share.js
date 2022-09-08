@@ -17,7 +17,7 @@ function shareHandler(type, shareText, url) {
   switch (type) {
     case "WA":
       window.open(
-        "https://wa.me/?text=" + encodeURIComponent(shareText),
+        "https://api.whatsapp.com/send/?text=" + encodeURIComponent(shareText),
         "_blank"
       );
       break;
@@ -39,10 +39,7 @@ function shareHandler(type, shareText, url) {
       break;
     case "twitter":
       window.open(
-        "https://twitter.com/intent/tweet?url=" +
-          encodeURIComponent(url) +
-          "&text=" +
-          encodeURIComponent(shareText),
+        "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
         "_blank"
       );
       break;
