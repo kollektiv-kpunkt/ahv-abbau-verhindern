@@ -1,0 +1,41 @@
+#ahv-letter-share-wrapper {
+    max-width: 780px;
+}
+
+.ahv-share-buttons {
+    --gutter: .5rem;
+    --cols: 2;
+
+    gap: var(--gutter);
+
+    @media (max-width: 980px) {
+        --cols: 1;
+    }
+
+    .ahv-share-button {
+        width: calc(100% / var(--cols) - ((var(--cols) - 1) * var(--gutter) / var(--cols)));
+        font-size: 1.25rem;
+
+        &.w-full {
+            width: 100%;
+        }
+
+        --bordercolor: var(--backgroundcolor);
+
+        &#WA {
+            --backgroundcolor: #25D366;
+        }
+
+        &#FB {
+            --backgroundcolor: #4267B2;
+        }
+
+        &#tele {
+            --backgroundcolor: #0088cc;
+        }
+
+        &#twitter {
+            --backgroundcolor: #1DA1F2;
+        }
+    }
+}
